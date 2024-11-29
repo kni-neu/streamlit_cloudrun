@@ -48,7 +48,7 @@ monthly_payment = calculate_mortgage(amount, interest_rate, years)
 st.write(f'Monthly Payment: ${monthly_payment:.2f}')
 
 # Print out what the user wrote in the string:
-st.write(f'Hello! You wrote: {}', user_string)
+st.write(f'Hello! You wrote: ' + user_string)
 
 # Generate monthly breakdown graph
 interest_rate = interest_rate / 100 / 12
