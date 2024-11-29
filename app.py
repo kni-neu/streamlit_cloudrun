@@ -40,12 +40,15 @@ st.title('Mortgage Calculator')
 amount = st.slider('Loan Amount', 1000, 1000000, 100000, step=1000)
 interest_rate = st.slider('Interest Rate', 0.1, 20.0, 3.0, step=0.1)
 years = st.slider('Number of Years', 1, 30, 15)
+user_string = st.text_input("Enter your text:")
+
 
 # Calculate monthly payment
 monthly_payment = calculate_mortgage(amount, interest_rate, years)
 st.write(f'Monthly Payment: ${monthly_payment:.2f}')
 
-
+# Print out what the user wrote in the string:
+st.write(f'Hello! You wrote: {}', user_string)
 
 # Generate monthly breakdown graph
 interest_rate = interest_rate / 100 / 12
