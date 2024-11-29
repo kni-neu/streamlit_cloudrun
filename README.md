@@ -5,7 +5,7 @@ This code is forked from [mktaop](https://github.com/mktaop/cloudrun_demo), demo
 ### Step by Steps
 
 1. Select / Search for Cloud Run, and Deploy Container (as Service) ![](images/cloud-run.png)
-2. Deploy from git, and ensure the username is connected. You may need to install Cloud Build for the repositories ![](images/deploy-from-git).
+2. Deploy from git, and ensure the username is connected. You may need to install Cloud Build for the repositories ![](images/deploy-from-git.png).
 
 ### Requirements 
 
