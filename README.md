@@ -2,9 +2,11 @@
 
 This code is forked from [mktaop](https://github.com/mktaop/cloudrun_demo), demo'ing a simple Streamlit App that Google can run on Cloud Run. His step by step video is [located here](https://www.youtube.com/watch?v=BGMdxpXsbB4).
 
+### Step by Steps
 
+1. Select / Search for Cloud Run, and Deploy Container (as Service) ![](images/cloud-run.png)
 
-### Original Steps
+### Requirements 
 
 Please read for what's required in terms of roles and API!
 
