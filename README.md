@@ -22,7 +22,7 @@ Run the container with the name `streamlit-runner`. The following will also crea
 
 This route will have you spin a VM up, ensure it has right networking access, and then install / run the streamlit application. To do so, the steps are as follows.
 
-1 Ensure VPC firewall rules exist. If not, do the following to create the rules
+1. Ensure VPC firewall rules exist. If not, do the following to create the rules
   1. VPC Network / Firewall / Create Firewall Rule
   1. Give it some target tag (e.g., allow-9k-ingress and allow-9k-egress)
   1. For both ingress and egress, create a rule: specify TCP ports (e.g, 0-9k) and all UDP ports (2 rules)
