@@ -23,15 +23,15 @@ Run the container with the name `streamlit-runner`. The following will also crea
 This route will have you spin a VM up, ensure it has right networking access, and then install / run the streamlit application. To do so, the steps are as follows.
 
 1. Ensure VPC firewall rules exist. If not, do the following to create the rules
-  1. VPC Network / Firewall / Create Firewall Rule
-  1. Give it some target tag (e.g., allow-9k-ingress and allow-9k-egress)
-  1. For both ingress and egress, create a rule: specify TCP ports (e.g, 0-9k) and all UDP ports (2 rules)
+	1. VPC Network / Firewall / Create Firewall Rule
+	1. Give it some target tag (e.g., allow-9k-ingress and allow-9k-egress)
+	1. For both ingress and egress, create a rule: specify TCP ports (e.g, 0-9k) and all UDP ports (2 rules)
 1. Virtual environment setup and install packages (unless you manage to install everything on the VM w/o it)
-  1. Create the environment with `python3 -m venv stenv`
-  1. Get into the virtual environment with `source stenv/bin/activate`
-  1. Go into this cloned repository and run `pip install -r requirements.txt`
+	1. Create the environment with `python3 -m venv stenv`
+	1. Get into the virtual environment with `source stenv/bin/activate`
+	1. Go into this cloned repository and run `pip install -r requirements.txt`
 1. Edit your app.py and run `streamlit` at your desired port:
-  1. `streamlit run app.py --server.port=XXXX`
+	1. `streamlit run app.py --server.port=XXXX`
 
 The reason the majority of (2) exists above is because for some reason, pip doesn't work on VMs and it'll ask you to use a virtual environment.
 
